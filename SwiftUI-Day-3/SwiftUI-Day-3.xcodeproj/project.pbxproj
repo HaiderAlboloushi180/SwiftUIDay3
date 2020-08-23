@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D53C093424F31E7000EF6E22 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C093324F31E7000EF6E22 /* ScrollView.swift */; };
+		D51D1E7E24F3274C00575135 /* Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D1E7D24F3274C00575135 /* Scroll.swift */; };
 		D5542D4A24F2FD7A0041792B /* CW8.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5542D4924F2FD7A0041792B /* CW8.swift */; };
 		D595D9D424F2C61C008DCE7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595D9D324F2C61C008DCE7A /* AppDelegate.swift */; };
 		D595D9D624F2C61C008DCE7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595D9D524F2C61C008DCE7A /* SceneDelegate.swift */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D53C093324F31E7000EF6E22 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		D51D1E7D24F3274C00575135 /* Scroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scroll.swift; sourceTree = "<group>"; };
 		D5542D4924F2FD7A0041792B /* CW8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CW8.swift; sourceTree = "<group>"; };
 		D595D9D024F2C61C008DCE7A /* SwiftUI-Day-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Day-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D595D9D324F2C61C008DCE7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 				D5542D4924F2FD7A0041792B /* CW8.swift */,
 				D595D9E724F2CC4B008DCE7A /* MovieDetailsView.swift */,
 				D595D9EC24F2F2F5008DCE7A /* CW9.swift */,
-				D53C093324F31E7000EF6E22 /* ScrollView.swift */,
+				D51D1E7D24F3274C00575135 /* Scroll.swift */,
 				D595D9D924F2C620008DCE7A /* Assets.xcassets */,
 				D595D9DE24F2C620008DCE7A /* LaunchScreen.storyboard */,
 				D595D9E124F2C620008DCE7A /* Info.plist */,
@@ -171,10 +171,10 @@
 			files = (
 				D595D9D424F2C61C008DCE7A /* AppDelegate.swift in Sources */,
 				D595D9D624F2C61C008DCE7A /* SceneDelegate.swift in Sources */,
+				D51D1E7E24F3274C00575135 /* Scroll.swift in Sources */,
 				D595D9E824F2CC4B008DCE7A /* MovieDetailsView.swift in Sources */,
 				D595D9D824F2C61C008DCE7A /* ContentView.swift in Sources */,
 				D5542D4A24F2FD7A0041792B /* CW8.swift in Sources */,
-				D53C093424F31E7000EF6E22 /* ScrollView.swift in Sources */,
 				D595D9EB24F2DB01008DCE7A /* Movie.swift in Sources */,
 				D595D9ED24F2F2F5008DCE7A /* CW9.swift in Sources */,
 			);

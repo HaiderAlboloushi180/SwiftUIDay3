@@ -14,14 +14,7 @@ struct MovieDetailsView: View {
     var movie: Movie
     var body: some View {
         ZStack{
-            Group{
-                Image(movie.movieName)
-                .resizable()
-                .scaledToFit()
-                .blur(radius: 40)
-                Color.black.opacity(0.3)
-            }
-            .edgesIgnoringSafeArea(.all)
+            MovieBG(movie: movie)
             
             VStack(alignment: .center){
                 Image(movie.movieName)
@@ -38,11 +31,13 @@ struct MovieDetailsView: View {
                     .font(.title)
                 Spacer()
                 
-                HStack{
-                    ForEach(movie.mainCharacters, id: \.self){ (character: String) in
-                        Image(character).resizable().scaledToFit().frame(width: 160)
+                ScrollView(.horizontal, showsIndicators: false){
+                    HStack{
+                        ForEach(movie.mainCharacters, id: \.self){ (character: String) in
+                            Image(character).resizable().scaledToFit().frame(width: 160)
+                        }
+                        Spacer()
                     }
-                    Spacer()
                 }
             }
             .padding(.vertical)
@@ -55,5 +50,19 @@ struct MovieDetailsView: View {
 struct MovieDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         MovieDetailsView(movie: movies[0])
+    }
+}
+
+struct MovieBG: View {
+    var movie: Movie
+    var body: some View {
+        Group{
+            Color.black.opacity(0.3)
+                .background(Image(movie.movieName)
+                    .resizable()
+                    .scaledToFit()
+                    .blur(radius: 40))
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
