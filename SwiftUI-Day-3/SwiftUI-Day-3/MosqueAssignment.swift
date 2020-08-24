@@ -10,12 +10,56 @@ import SwiftUI
 
 struct MosqueAssignment: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            List(mosques) { mosque in
+                NavigationLink(destination: MosqueDetailsView(mosque: mosque)) {
+                    MosqueRow(mosque: mosque)
+                }
+            }
+            .navigationBarTitle("مساجد الكويت")
+        }
+        .accentColor(.white)
     }
 }
 
 struct MosqueAssignment_Previews: PreviewProvider {
     static var previews: some View {
-        MosqueAssignment()
+        Group{
+            MosqueAssignment()
+            .previewDisplayName("مساجد الكويت")
+            .environment(\.colorScheme, .dark)
+            
+            MosqueAssignment()
+            .previewDisplayName("مساجد الكويت iPhone 8")
+            .previewDevice("iPhone 8")
+            .environment(\.colorScheme, .dark)
+            
+            MosqueAssignment()
+            .previewDisplayName("مساجد الكويت iPhone SE")
+            .previewDevice("iPhone SE (2nd generation)")
+            .environment(\.colorScheme, .dark)
+            
+        }
+    }
+}
+
+struct MosqueRow: View {
+    var mosque: Mosque
+    var body: some View {
+        HStack{
+            Image(mosque.mosqueName)
+            .resizable()
+            .scaledToFit()
+                .frame(width: 130)
+            .clipShape(Circle())
+            
+            VStack(alignment: .leading){
+                Text(mosque.mosqueName)
+                    .font(.largeTitle)
+                Text(mosque.location)
+                    .font(.system(size: 25))
+            }
+        }
+        .padding(.vertical)
     }
 }

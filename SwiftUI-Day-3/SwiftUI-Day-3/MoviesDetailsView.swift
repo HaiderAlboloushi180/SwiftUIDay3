@@ -8,22 +8,22 @@
 
 // MARK: -IGNOOOOOORE -
 
-import SwiftUI
-
-struct MoviesDetailsView: View {
-    var body: some View {
-        ScrollView{
-            Text("Hello")
-            Text("Hello")
-            Text("Hello")
-            Text("Hello")
-            Text("Hello")
-        }
-    }
-}
-
-struct MoviesDetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        MoviesDetailsView()
-    }
-}
+//import SwiftUI
+//
+//struct MoviesDetailsView: View {
+//    var body: some View {
+//        ScrollView{
+//            Text("Hello")
+//            Text("Hello")
+//            Text("Hello")
+//            Text("Hello")
+//            Text("Hello")
+//        }
+//    }
+//}
+//
+//struct MoviesDetailsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MoviesDetailsView()
+//    }
+//}

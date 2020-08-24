@@ -24,6 +24,18 @@ struct CW9: View {
 
 struct CW9_Previews: PreviewProvider {
     static var previews: some View {
-        CW9()
+        Group{
+            CW9()
+            .previewDisplayName("List of Movies iPhone 11")
+            MovieRow(movie: movies[0])
+            .previewDisplayName("Movie Row Component")
+                .previewLayout(.sizeThatFits)
+            CW9()
+            .previewDisplayName("List of Movies iPhone 8")
+                .previewDevice("iPhone 8")
+                .environment(\.colorScheme, .dark)
+                .environment(\.layoutDirection, .rightToLeft)
+                .environment(\.sizeCategory, .accessibilityExtraLarge)
+        }
     }
 }

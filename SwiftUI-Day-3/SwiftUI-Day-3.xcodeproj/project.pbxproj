@@ -20,6 +20,8 @@
 		D595D9EB24F2DB01008DCE7A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595D9EA24F2DB01008DCE7A /* Movie.swift */; };
 		D595D9ED24F2F2F5008DCE7A /* CW9.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595D9EC24F2F2F5008DCE7A /* CW9.swift */; };
 		D5F41C3924F3F5F20074BB95 /* MoviesDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F41C3824F3F5F20074BB95 /* MoviesDetailsView.swift */; };
+		D5F41C3B24F437230074BB95 /* Mosque.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F41C3A24F437230074BB95 /* Mosque.swift */; };
+		D5F41C3D24F444170074BB95 /* MosqueDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F41C3C24F444170074BB95 /* MosqueDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		D595D9EA24F2DB01008DCE7A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D595D9EC24F2F2F5008DCE7A /* CW9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CW9.swift; sourceTree = "<group>"; };
 		D5F41C3824F3F5F20074BB95 /* MoviesDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDetailsView.swift; sourceTree = "<group>"; };
+		D5F41C3A24F437230074BB95 /* Mosque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mosque.swift; sourceTree = "<group>"; };
+		D5F41C3C24F444170074BB95 /* MosqueDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosqueDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				D595D9EC24F2F2F5008DCE7A /* CW9.swift */,
 				D51D1E7D24F3274C00575135 /* Scroll.swift */,
 				D51D1E7F24F3DDF700575135 /* MosqueAssignment.swift */,
+				D5F41C3C24F444170074BB95 /* MosqueDetailsView.swift */,
 				D595D9D924F2C620008DCE7A /* Assets.xcassets */,
 				D595D9DE24F2C620008DCE7A /* LaunchScreen.storyboard */,
 				D595D9E124F2C620008DCE7A /* Info.plist */,
@@ -100,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				D595D9EA24F2DB01008DCE7A /* Movie.swift */,
+				D5F41C3A24F437230074BB95 /* Mosque.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +189,8 @@
 				D595D9E824F2CC4B008DCE7A /* MovieDetailsView.swift in Sources */,
 				D595D9D824F2C61C008DCE7A /* ContentView.swift in Sources */,
 				D5542D4A24F2FD7A0041792B /* CW8.swift in Sources */,
+				D5F41C3B24F437230074BB95 /* Mosque.swift in Sources */,
+				D5F41C3D24F444170074BB95 /* MosqueDetailsView.swift in Sources */,
 				D595D9EB24F2DB01008DCE7A /* Movie.swift in Sources */,
 				D595D9ED24F2F2F5008DCE7A /* CW9.swift in Sources */,
 			);
