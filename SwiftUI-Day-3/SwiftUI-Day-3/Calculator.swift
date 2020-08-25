@@ -20,6 +20,7 @@ struct Calculator: View {
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .font(.system(size: 90))
+                    .frame(width: 1000)
                     .padding(.leading, 270)
                 
                 HStack{
