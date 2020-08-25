@@ -10,6 +10,9 @@
 		D51D1E7E24F3274C00575135 /* Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D1E7D24F3274C00575135 /* Scroll.swift */; };
 		D51D1E8024F3DDF700575135 /* MosqueAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D1E7F24F3DDF700575135 /* MosqueAssignment.swift */; };
 		D5542D4A24F2FD7A0041792B /* CW8.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5542D4924F2FD7A0041792B /* CW8.swift */; };
+		D59438B024F5260000CBB14B /* مشاري العفاسي.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D59438AF24F5260000CBB14B /* مشاري العفاسي.m4a */; };
+		D59438B224F527AF00CBB14B /* فهد الكندري.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D59438B124F527AF00CBB14B /* فهد الكندري.m4a */; };
+		D59438B424F52E3F00CBB14B /* نبيل العوضي.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D59438B324F52E3E00CBB14B /* نبيل العوضي.m4a */; };
 		D595D9D424F2C61C008DCE7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595D9D324F2C61C008DCE7A /* AppDelegate.swift */; };
 		D595D9D624F2C61C008DCE7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595D9D524F2C61C008DCE7A /* SceneDelegate.swift */; };
 		D595D9D824F2C61C008DCE7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595D9D724F2C61C008DCE7A /* ContentView.swift */; };
@@ -22,12 +25,16 @@
 		D5F41C3924F3F5F20074BB95 /* MoviesDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F41C3824F3F5F20074BB95 /* MoviesDetailsView.swift */; };
 		D5F41C3B24F437230074BB95 /* Mosque.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F41C3A24F437230074BB95 /* Mosque.swift */; };
 		D5F41C3D24F444170074BB95 /* MosqueDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F41C3C24F444170074BB95 /* MosqueDetailsView.swift */; };
+		D5F41C3F24F458570074BB95 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F41C3E24F458570074BB95 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D51D1E7D24F3274C00575135 /* Scroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scroll.swift; sourceTree = "<group>"; };
 		D51D1E7F24F3DDF700575135 /* MosqueAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosqueAssignment.swift; sourceTree = "<group>"; };
 		D5542D4924F2FD7A0041792B /* CW8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CW8.swift; sourceTree = "<group>"; };
+		D59438AF24F5260000CBB14B /* مشاري العفاسي.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "مشاري العفاسي.m4a"; sourceTree = "<group>"; };
+		D59438B124F527AF00CBB14B /* فهد الكندري.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "فهد الكندري.m4a"; sourceTree = "<group>"; };
+		D59438B324F52E3E00CBB14B /* نبيل العوضي.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "نبيل العوضي.m4a"; sourceTree = "<group>"; };
 		D595D9D024F2C61C008DCE7A /* SwiftUI-Day-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Day-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D595D9D324F2C61C008DCE7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D595D9D524F2C61C008DCE7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +49,7 @@
 		D5F41C3824F3F5F20074BB95 /* MoviesDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDetailsView.swift; sourceTree = "<group>"; };
 		D5F41C3A24F437230074BB95 /* Mosque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mosque.swift; sourceTree = "<group>"; };
 		D5F41C3C24F444170074BB95 /* MosqueDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosqueDetailsView.swift; sourceTree = "<group>"; };
+		D5F41C3E24F458570074BB95 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,9 @@
 		D595D9D224F2C61C008DCE7A /* SwiftUI-Day-3 */ = {
 			isa = PBXGroup;
 			children = (
+				D59438AF24F5260000CBB14B /* مشاري العفاسي.m4a */,
+				D59438B124F527AF00CBB14B /* فهد الكندري.m4a */,
+				D59438B324F52E3E00CBB14B /* نبيل العوضي.m4a */,
 				D595D9E924F2DAF0008DCE7A /* Models */,
 				D595D9D324F2C61C008DCE7A /* AppDelegate.swift */,
 				D595D9D524F2C61C008DCE7A /* SceneDelegate.swift */,
@@ -85,6 +96,7 @@
 				D51D1E7D24F3274C00575135 /* Scroll.swift */,
 				D51D1E7F24F3DDF700575135 /* MosqueAssignment.swift */,
 				D5F41C3C24F444170074BB95 /* MosqueDetailsView.swift */,
+				D5F41C3E24F458570074BB95 /* Calculator.swift */,
 				D595D9D924F2C620008DCE7A /* Assets.xcassets */,
 				D595D9DE24F2C620008DCE7A /* LaunchScreen.storyboard */,
 				D595D9E124F2C620008DCE7A /* Info.plist */,
@@ -169,8 +181,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D595D9E024F2C620008DCE7A /* LaunchScreen.storyboard in Resources */,
+				D59438B024F5260000CBB14B /* مشاري العفاسي.m4a in Resources */,
 				D595D9DD24F2C620008DCE7A /* Preview Assets.xcassets in Resources */,
 				D595D9DA24F2C620008DCE7A /* Assets.xcassets in Resources */,
+				D59438B224F527AF00CBB14B /* فهد الكندري.m4a in Resources */,
+				D59438B424F52E3F00CBB14B /* نبيل العوضي.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +201,7 @@
 				D51D1E8024F3DDF700575135 /* MosqueAssignment.swift in Sources */,
 				D595D9D624F2C61C008DCE7A /* SceneDelegate.swift in Sources */,
 				D51D1E7E24F3274C00575135 /* Scroll.swift in Sources */,
+				D5F41C3F24F458570074BB95 /* Calculator.swift in Sources */,
 				D595D9E824F2CC4B008DCE7A /* MovieDetailsView.swift in Sources */,
 				D595D9D824F2C61C008DCE7A /* ContentView.swift in Sources */,
 				D5542D4A24F2FD7A0041792B /* CW8.swift in Sources */,
