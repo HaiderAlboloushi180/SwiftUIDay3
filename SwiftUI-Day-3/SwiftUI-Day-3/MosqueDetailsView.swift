@@ -18,62 +18,52 @@ struct MosqueDetailsView: View {
         ZStack(alignment: .top){
             VStack{
                 ZStack{
-                    ZStack{
-                        Image(mosque.mosqueName)
-                        .resizable()
-                        .blur(radius: 2.5)
-                        .frame(width: 420, height: 300)
-                        .edgesIgnoringSafeArea(.all)
-
-                        Text(mosque.mosqueName)
-                        .font(.largeTitle)
-                        .foregroundColor(Color.init(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6514875856)))
-                        .bold()
-                        .padding(.bottom, 250)
-                    }
-
+                
+                    MosqueImage(mosque: mosque)
+                    
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack(spacing: 20){
                             ForEach(mosque.imams, id: \.self){ (imam: String) in
                                 Image(imam).resizable().scaledToFit().frame(width: 160).clipShape(Circle())
-                                .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                                .onTapGesture {
-                                    let path = Bundle.main.path(forResource: "\(imam).m4a", ofType:nil)!
-                                    let url = URL(fileURLWithPath: path)
-
-                                    do {
-                                        self.ayah = try AVAudioPlayer(contentsOf: url)
-                                        self.ayah?.play()
-                                    } catch {
-                                        // couldn't load file :(
-                                    }
+                                    .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                                    .onTapGesture {
+                                        let path = Bundle.main.path(forResource: "\(imam).m4a", ofType:nil)!
+                                        let url = URL(fileURLWithPath: path)
+                                        
+                                        do {
+                                            self.ayah = try AVAudioPlayer(contentsOf: url)
+                                            self.ayah?.play()
+                                        } catch {
+                                            // couldn't load file :(
+                                        }
                                 }
+                                
                             }
                         }
                     }
                     .offset(x: 0, y: 10)
                 }
-
+                
                 ScrollView(.vertical, showsIndicators: false){
                     HStack{
                         VStack(spacing: 50){
                             ForEach(prayerTimes, id: \.self){ prayerTime in
                                 Text(prayerTime)
-                                .font(.title)
-                                .fontWeight(.semibold)
+                                    .font(.title)
+                                    .fontWeight(.semibold)
                             }
                             .padding(.leading, 70)
                         }
                         Spacer()
-
+                        
                         VStack(spacing: 50){
                             ForEach(prayerTimeofDay, id: \.self){ partOfDay in
                                 Text(partOfDay)
-                                .font(.title)
-                                .fontWeight(.semibold)
+                                    .font(.title)
+                                    .fontWeight(.semibold)
                             }
                             .padding(.trailing, 70)
-
+                            
                         }
                     }
                 }
@@ -85,5 +75,24 @@ struct MosqueDetailsView: View {
 struct MosqueDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         MosqueDetailsView(mosque: mosques[0])
+    }
+}
+
+struct MosqueImage: View {
+    var mosque: Mosque
+    var body: some View {
+        ZStack{
+            Image(mosque.mosqueName)
+                .resizable()
+                .blur(radius: 2.5)
+                .frame(width: 420, height: 300)
+                .edgesIgnoringSafeArea(.all)
+            
+            Text(mosque.mosqueName)
+                .font(.largeTitle)
+                .foregroundColor(Color.init(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6514875856)))
+                .bold()
+                .padding(.bottom, 250)
+        }
     }
 }
